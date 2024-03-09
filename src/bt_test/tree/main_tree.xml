@@ -1,0 +1,15 @@
+<root BTCPP_format="4">
+
+  <BehaviorTree ID="MainTree">
+    <RetryUntilSuccessful num_attempts="-1">
+      <ReactiveFallback>
+        <Sequence>
+            <Doing/>
+            <MoveNode sec="2"/>
+        </Sequence>
+        <MoveNode sec="10"/>
+      </ReactiveFallback>
+    </RetryUntilSuccessful>
+  </BehaviorTree>
+
+</root>
